@@ -1,8 +1,9 @@
-from audiencias import lee_audiencias
+from audiencias import *
 def main():
-    listado_audiencias = lee_audiencias('H:\Other computers\My Computer\Universidad\Fundamentos de Programacion\Proyectos de Teoría\TEO-Audiencias\data\GH.csv')
+    listado_audiencias = lee_audiencias("data\GH_2.csv")
+    tupla = listado_audiencias[0]
     print(listado_audiencias)
     print('Total de', len(listado_audiencias), " registros")
 
-
-main()
+if __name__ == '__main__':
+    main()
